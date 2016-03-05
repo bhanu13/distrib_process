@@ -1,0 +1,12 @@
+
+- Generate a unique token with each process.
+	- Append hash value to message
+
+- Each process maintains a hash map of token to <msg> with <pid>
+
+- Sequencer broadcasts the <token> and process delivers the <msg> corresponding to the token.
+
+- The sequencer process identifies which token corresponding to the message needs to be broadcasted.
+
+- Hash token based on system time.
+
